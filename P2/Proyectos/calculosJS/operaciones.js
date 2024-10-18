@@ -33,6 +33,7 @@ function operacion() {
     }
 
     else
+    resul=document.getElementById("resultado").innerHTML=`<h2>Ingresa solo numeros</h2>`
    alert("Ingrese solo numeros")
    
 }
