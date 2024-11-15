@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Área</title>
+    <link rel="stylesheet" href="estilosA.css">
+</head>
+<body>
+    <h1>.::Calculadora de Área::.</h1>
+    <div class="calculator">
+        <label for="shape">Seleccione la figura:</label>
+        <select id="shape">
+            <option value="square">Cuadrado</option>
+            <option value="rectangle">Rectángulo</option>
+            <option value="triangle">Triángulo</option>
+            <option value="circle">Círculo</option>
+        </select>
+
+        <div id="inputFields">
+            <!-- Dynamic input fields will appear here -->
+        </div>
+
+        <button onclick="calculateArea()">Calcular Área</button>
+        <p id="result"></p>
+        <div id="shapeDisplay"></div>
+    </div>
+
+    <script src="areas.js"></script>
+</body>
+</html>
+
