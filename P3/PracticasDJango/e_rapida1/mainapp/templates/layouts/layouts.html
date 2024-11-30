@@ -1,21 +1,26 @@
-<!-- mainapp/templates/layouts/layouts.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}E-Rápida{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% comment "" %}Aqui se maqueta el bloque de title{% endcomment %}
+        {% endblock title  %}
+    </title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="{% url 'index' %}">Inicio</a>
-            <a href="{% url 'mision' %}">Misión</a>
-            <a href="{% url 'vision' %}">Visión</a>
-            <a href="{% url 'about' %}">Acerca de</a>
-        </nav>
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    <h1>Bienvenido a mi proyecto con DJango</h1>
+    <h2>Desarrollo de SW Multiplataforma</h2>
+    <ul>
+        <li><a href="{% url "inicio" %}">Inicio</a></li>
+        <li><a href="{% url "mision" %}">Mision</a></li>
+        <li><a href="{% url "vision" %}">Vision</a></li>
+        <li><a href="{% url "acercade" %}">Acerca de</a></li>
+    </ul>
+    {% block content %}
+    {% comment%}Aqui se maqueta el bloque de content{% endcomment %}
+    {% endblock content %}
+    
 </body>
 </html>

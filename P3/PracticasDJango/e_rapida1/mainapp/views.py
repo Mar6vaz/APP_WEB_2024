@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 # Create your views here.
 def index(requets):
@@ -9,7 +9,8 @@ def index(requets):
 
 
 
-def about(requets):
+
+def abaut(requets):
     mensaje='Bienvenido mi nombre es: Amparo Franco'
     return render(requets, 'mainapp/about.html', {
         'title': 'Hacerca de Nosotros',
